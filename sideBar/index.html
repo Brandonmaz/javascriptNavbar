@@ -1,24 +1,28 @@
 <!DOCTYPE html>
+
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Navbar</title>
+        <title>Side Bar</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="sideBar.css">
     </head>
     <body>
-        <nav>
-            <div class="nav-center">
-                <div class="nav-header">
-                    <img src="./logo.png" class="logo" alt="logo">
-                    <button class="nav-toggle">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-    <ul class="links">
+      <button class="sidebar-toggle">
+          <i class="fas fa-bars"></i>
+      </button>
+      <aside class="sidebar">
+          <div class="sidebar-header">
+              <img src="/logo.png" class="logo" alt="logo">
+              <button class="close-btn">
+                  <i class="fas fa-times"></i>
+              </button>
+          </div>
+          <!-- links -->
+      <ul class="links">
         <li>
           <a href="index.html">home</a>
         </li>
@@ -31,8 +35,9 @@
         <li>
           <a href="contact.html">contact</a>
         </li>
-    </ul>
-    <ul class="social-icons">
+      </ul>
+      <!-- social media -->
+      <ul class="social-icons">
         <li>
           <a href="https://www.twitter.com">
             <i class="fab fa-facebook"></i>
@@ -58,9 +63,8 @@
             <i class="fab fa-sketch"></i>
           </a>
         </li>
-    </ul>
-            </div>
-        </nav>
-        <script src="app.js"></script>
+      </ul>
+      </aside>
+        <script src="app.js" async defer></script>
     </body>
 </html>
